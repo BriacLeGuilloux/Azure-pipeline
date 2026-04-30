@@ -1,0 +1,9 @@
+trigger:
+- main  # Déclenche le pipeline quand la branche `main` est mise à jour
+
+pool:
+  vmImage: 'ubuntu-latest'  # Utilise une machine virtuelle Ubuntu
+
+steps:
+- script: echo "Mon pipeline fonctionne !"
+  displayName: 'Test du pipeline'
